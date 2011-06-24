@@ -1,19 +1,10 @@
 <?php
 /* 
-Plugin Name: Secure and Accessible PHP Contact Form
-Plugin URI: http://green-beast.com/blog/?page_id=136
+Plugin Name: Secure and Accessible Contact Form
+Plugin URI: http://mikejolley.com/projects/secure-accessible-contact-form/
 Version: v.2.1WP B20110125
 Author: <a href="http://green-beast.com/">Mike Cherim</a> and <a href="http://blue-anvil.com/">Mike Jolley</a>
 Description: This powerful yet easy-to-install contact form features exceptional accessibility and usability while still providing extensive anti-spam and anti-exploit security features. A marriage of communication and peace-of-mind. 
-*/
-
-/* 
-Secure and Accessible PHP Contact Form v.2.0WP (c) Copyright 2006-current. All rights reserved.
-Mike Cherim (http://green-beast.com/) and Mike Jolley  (http://www.blue-anvil.com/)
-You are free to use this application but may not redistribute it without written permission.
-Use of this application will be at your own risk. No guarantees or warranties are made, direct or implied.
-The creators cannot and will not be liable or held accountable for damages, direct or consequential.
-By using this application it implies agreement to these conditions. 
 */
 
 ################################################################################
