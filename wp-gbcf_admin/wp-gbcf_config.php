@@ -6,7 +6,7 @@ function gb_contact_form_admin(){
 
 	global $form_version;
 
-	if ($_POST['sub']) {
+	if (isset($_POST['sub'])) {
 
 		update_option('gb_email_address', trim($_POST['email']));
 		update_option('gb_contact_name', trim(stripslashes($_POST['gbname'])));

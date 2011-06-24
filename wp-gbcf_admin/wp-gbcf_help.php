@@ -8,7 +8,7 @@ function gb_contact_form_admin_docs() {
 	<div id="secureformsadminicon" class="icon32"><br/></div>
 	<h2>Documentation &laquo; Secure and Accessible <abbr><span class="abbr" title="PHP Hypertext Preprocessor">PHP</span></abbr> Contact Form</h2>
 	<?php gb_check_config(); ?>
- 	<p>This page offers <a href="#form-config">Form Configuration Instructions</a>, <a href="#form-style">Form Styling Help</a> and a <a href="#form-help">Helpful <abbr><span class="abbr" title="Frequently Asked Questions">FAQ</span></abbr>s</a>. If additional support is needed, please contact <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://blue-anvil.com/contact/">Mike Jolley</a>. Please note, however, free support is on a first-come, first-served basis and will be limited. Paid support, though, is always available and will be given top priority.</p>
+ 	<p>This page offers <a href="#form-config">Form Configuration Instructions</a>, <a href="#form-style">Form Styling Help</a> and a <a href="#form-help">Helpful <abbr><span class="abbr" title="Frequently Asked Questions">FAQ</span></abbr>s</a>. If additional support is needed, please contact <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://mikejolley.com/contact/">Mike Jolley</a>. Please note, however, free support is on a first-come, first-served basis and will be limited. Paid support, though, is always available and will be given top priority.</p>
 	
 	<h2>Inserting the form into a post/page/template</h2>
 	<p>You have three options to do this:</p>
@@ -163,7 +163,7 @@ function gb_contact_form_admin_docs() {
     <li>Once a file is selected using the Form Theme Selector, the applicable style sheet file will appear in the Form Theme Editor and if the permissions are set to make it writable it will be ready to edit. See the <a href="#form-help">Helpful <abbr><span class="abbr" title="Frequently Asked Questions">FAQ</span></abbr>s</a> to learn more about this.</li>
     <li>To edit the style sheet you <em>will</em> need to understand the manipulation of <abbr><span class="abbr" title="Cascading Style Sheets">CSS</span></abbr> to properly modify it. You can get some help on the web. One good resource is the <a href="http://www.htmlhelp.com/reference/css/" title="Web Developer Group">WDG CSS Properties Guide</a>. You can also get <a href="http://www.htmlhelp.com/cgi-bin/color.cgi" title="Web Developer Group">help with color codes</a> there.</li>
     <li>Once you have finish making edits to the selected style sheet file, you can save your changes by clicking the <strong>Save Changes</strong> button. Again, do remember to set the permissions to make the file editable. See the <a href="#form-help">Helpful <abbr><span class="abbr" title="Frequently Asked Questions">FAQ</span></abbr>s</a> to learn more about this.</li>
-    <li>If you need help, custom styling is available by contacting <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://blue-anvil.com/contact/">Mike Jolley</a> (or your developer of choice). This type of support is billable but the result will be a cross-compatible and professional solution.</li>
+    <li>If you need help, custom styling is available by contacting <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://mikejolley.com/contact/">Mike Jolley</a> (or your developer of choice). This type of support is billable but the result will be a cross-compatible and professional solution.</li>
    </ol>
  <p class="submit jump"><a href="#wphead">Top</a></p>
 
@@ -227,7 +227,7 @@ function gb_contact_form_admin_docs() {
      <li>Create a new WordPress page for the form &#8212; or use the existing page (Edit).</li>
      <li>Remove the &#8220;tag&#8221; if the page already exists, but feel free to add other text content.</li>
      <li>Select &#8220;Contact&#8221; from the pull down on the sidebar of the edit page. (Contact if that&#8217;s the name of the template you made.)</li>
-     <li>Save it. That&#8217;s it. Need help? Contact <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://blue-anvil.com/contact/">Mike Jolley</a> for professional assistance.</li>
+     <li>Save it. That&#8217;s it. Need help? Contact <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://mikejolley.com/contact/">Mike Jolley</a> for professional assistance.</li>
     </ol></dd>
   <dt>Can I edit the form file, <code>wp-gbcf_form.php</code>, and the scripting?</dt>
    <dd>You can if you want to, but it is not recommended unless you are a <abbr><span class="abbr" title="PHP Hypertext Preprocessor">PHP</span></abbr> expert. The script is large and will be difficult to edit or modify. Maybe in the future we will add a function to modify the form further but for now what you see is what you get. We attempted to satisfy the needs of as many users as possible by creating a one-size-fits-all contact form with some really common options and fields.</dd>
@@ -240,7 +240,7 @@ function gb_contact_form_admin_docs() {
   <dt>How do I style the form so it looks nice?</dt>
    <dd>Check the <a href="admin.php?page=Styling">Styling</a> page to modify your form&#8217;s appearance to suit your needs. Several themes are provided, you can also select none and use your own style sheet, or you can create a custom theme of your own with the editor.</dd> 
   <dt>I want to customize my form but I don&#8217;t know how. Can you help?</dt>
-   <dd>Yes, if you want to change the look. First you&#8217;ll want try all the themes to see if one will work for you or get you close. If not working out as well as you like, contact <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://blue-anvil.com/contact/">Mike Jolley</a> to request a styling quotation. We can do! If you want to make code modifications, we <em>may</em> help, depending on what you want to do. Some custom editions have been made &#8212; such as our multi-user version for WordPress &#8212; and may be available for purchase.</dd>
+   <dd>Yes, if you want to change the look. First you&#8217;ll want try all the themes to see if one will work for you or get you close. If not working out as well as you like, contact <a href="http://green-beast.com/contact/">Mike Cherim</a> or <a href="http://mikejolley.com/contact/">Mike Jolley</a> to request a styling quotation. We can do! If you want to make code modifications, we <em>may</em> help, depending on what you want to do. Some custom editions have been made &#8212; such as our multi-user version for WordPress &#8212; and may be available for purchase.</dd>
   <dt>My visitors seem to have difficulty answering my Anti-Spam question. What should I do?</dt>
    <dd>Ask an easier question with only one possible answer. Asking things like &#8220;<em>What is the meaning of life?</em>&#8221; or any question that can be answered subjectively simply won&#8217;t do. Even providing the actual answer within the question itself will work. Rule-of-thumb: Keep it Simple!</dd>
   <dt>Is the Anti-Spam question or its answer case-sensitive?</dt>

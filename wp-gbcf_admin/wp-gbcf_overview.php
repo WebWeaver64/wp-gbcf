@@ -14,7 +14,7 @@ function gb_contact_form_admin_welcome(){
 		<div id="secureformsadminicon" class="icon32"><br/></div>
 		<h2>Secure and Accessible <abbr><span class="abbr" title="PHP Hypertext Preprocessor">PHP</span></abbr> Contact Form</h2>
 		 <?php gb_check_config(); ?>
-		<p>This powerful yet easy-to-install <abbr><span class="abbr" title="PHP Hypertext Preprocessor">PHP</span></abbr> contact form, brought to you by <a href="http://green-beast.com/">Mike Cherim</a> and <a href="http://blue-anvil.com/">Mike Jolley</a>, features exceptional accessibility and usability while still providing extensive anti-spam and anti-exploit security features. A perfect marriage of communication and peace-of-mind. And it works. So far this form has saved you from getting 
+		<p>This powerful yet easy-to-install <abbr><span class="abbr" title="PHP Hypertext Preprocessor">PHP</span></abbr> contact form, brought to you by <a href="http://green-beast.com/">Mike Cherim</a> and <a href="http://mikejolley.com/">Mike Jolley</a>, features exceptional accessibility and usability while still providing extensive anti-spam and anti-exploit security features. A perfect marriage of communication and peace-of-mind. And it works. So far this form has saved you from getting 
 		   <code class="alert"><?php echo get_option('spamCount');?></code> spam emails! Happy now? Please make a Donation :)</p>	
 		<h3><?php _e('Contact Form Overview'); ?></h3>
 		<p>Shown below is an overview of the configuration of your contact form. Questions? Please review the <a href="admin.php?page=documentation">Documentation</a> or <a href="admin.php?page=documentation#form-help"><abbr><span class="abbr" title="Frequently Asked Questions">FAQs</span></abbr></a>.</p>

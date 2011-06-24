@@ -3,7 +3,7 @@
 Plugin Name: Secure and Accessible Contact Form
 Plugin URI: http://mikejolley.com/projects/secure-accessible-contact-form/
 Version: v.2.1WP B20110624
-Author: <a href="http://green-beast.com/">Mike Cherim</a> and <a href="http://blue-anvil.com/">Mike Jolley</a>
+Author: <a href="http://green-beast.com/">Mike Cherim</a> and <a href="http://mikejolley.com/">Mike Jolley</a>
 Description: This powerful yet easy-to-install contact form features exceptional accessibility and usability while still providing extensive anti-spam and anti-exploit security features. A marriage of communication and peace-of-mind. 
 */
 
@@ -199,7 +199,7 @@ function gb_show_contact_form() {
 	$trap_1_value = md5($form_id);
 	/* End security key gen */
 
-	$forms .= "\n".'<div id="gb_form_div"><!-- BEGIN: Secure and Accessible PHP Contact Form '.$form_version.' by Mike Cherim (http://green-beast.com/) and Mike Jolley (http://blue-anvil.com/) -->'."\n";
+	$forms .= "\n".'<div id="gb_form_div"><!-- BEGIN: Secure and Accessible PHP Contact Form '.$form_version.' by Mike Cherim (http://green-beast.com/) and Mike Jolley (http://mikejolley.com/) -->'."\n";
 
  	if (isset($_POST[$send_value])) {
  	
@@ -449,7 +449,7 @@ function gb_show_contact_form() {
 		$forms .= '<input tabindex="'.$options['tab_submit'].'" style="cursor:pointer;" class="button" type="submit" alt="Click Button to '.$options['send_button'].'" value="'.$options['send_button'].'" name="'.$send_value.'" id="'.$send_value.'" title="Click Button to Submit Form" />'."\n"; 
 
 		if($options['showcredit'] == "yes") {
-		    $forms .= '<p class="creditline"><small>Secure and Accessible <abbr><span class="abbr" title="PHP Hypertext Preprocessor">PHP</span></abbr> Contact Form <span title="'.$build.'">'.$form_version.'</span> by <a href="http://green-beast.com/" title="Green-Beast.com">Mike Cherim</a> &amp; <a href="http://blue-anvil.com/" title="Blue-Anvil.com">Mike Jolley</a>.</small></p>'."\n"; 
+		    $forms .= '<p class="creditline"><small>Secure and Accessible <abbr><span class="abbr" title="PHP Hypertext Preprocessor">PHP</span></abbr> Contact Form <span title="'.$build.'">'.$form_version.'</span> by <a href="http://green-beast.com/" title="Green-Beast.com">Mike Cherim</a> &amp; <a href="http://mikejolley.com/" title="Blue-Anvil.com">Mike Jolley</a>.</small></p>'."\n"; 
 		} else {
 		    $forms .= '<!--'.$build.'-->'."\n";
 		}
@@ -457,7 +457,7 @@ function gb_show_contact_form() {
 		$forms .= '</fieldset></form>'."\n";
 	}
 
-	$forms .= '</div><!-- END: Secure and Accessible PHP Contact Form '.$form_version.' by Mike Cherim (http://green-beast.com/) and Mike Jolley (http://blue-anvil.com/) -->'."\n\n";
+	$forms .= '</div><!-- END: Secure and Accessible PHP Contact Form '.$form_version.' by Mike Cherim (http://green-beast.com/) and Mike Jolley (http://mikejolley.com/) -->'."\n\n";
 	
 	return $forms; 
 }

@@ -3,52 +3,52 @@
 // FORM STYLING OUTPUT
 ################################################################################
 function gb_process_style($styleFile) {
-//processes style page forms
-if(!empty($_POST['saveFile'])){
-//update css file
-    $newfile = stripslashes($_POST['cssFile']);      	
-if(is_writeable($styleFile)) {
-    $f = fopen($styleFile, 'w+');
-         fwrite($f, $newfile);
-         fclose($f);
-
-    $style=get_option('gb_style');
-    $theme=get_option('gb_theme');
-    $themename=$theme;
-
-    echo ' <div id="message" class="updated fade"><p><strong>The &#8220;'.$themename.'&#8221; Stylesheet Has Been Updated</strong></p></div>'."\n";
-} else {
-
-    $style=get_option('gb_style');
-    $theme=get_option('gb_theme');
-    $themename=$theme;
-
-    echo ' <div id="message" class="updated fade"><div class="update error" style="padding-top:14px;padding-bottom:14px;margin-left:15px;"><strong>Write Error!</strong> The &#8220;<code>'.$themename.'</code>&#8221; file is not currently editable/writable! File permissions must first be changed.</p></div>
-   <p>To make the file editable, use your server admin or an <abbr><span class="abbr" title="File Transfer Protocol">FTP</span></abbr> program and go to <code>/wp-content/plugins/wp-gbcf/wp-gbcf_themes/</code> and change the file permissions of the <abbr><span class="abbr" title="Cascading Style Sheet">CSS</span></abbr> file to <code class="reg-alert">666</code>. You should then be able to edit the selected file. If you have made a lot of edits and wish not to lose them, change the &#8220;<code>'.$themename.'</code>&#8221; file permissions then simply refresh this page with your browser.</p></div>'."\n";
- }
-} else if (!empty($_POST['saveTheme'])){
-    $theme=$_POST['theme'];
-if($theme=='none'){
-      update_option('gb_style', 'none');
-      update_option('gb_theme', '');
-} else if ($theme=='custom'){
-      update_option('gb_style', 'theme');
-      update_option('gb_theme', 'custom.css');
-} else {
-      update_option('gb_style', 'theme');
-      update_option('gb_theme', $_POST['theme']);
-} 
-
-    $style=get_option('gb_style');
-    $theme=get_option('gb_theme');
-    $themename=str_replace(".css", "", $theme);
-if ($style=='none') {
-    $themename = "No";
-}
-
-    echo ' <div id="message" class="updated fade"><p><strong>&#8220;'.$themename.'&#8221; Theme Selected</strong></p></div>'."\n";
- }
-return($theme);
+	//processes style page forms
+	$theme = '';
+	if(!empty($_POST['saveFile'])) {
+		//update css file
+		$newfile = stripslashes($_POST['cssFile']);      	
+		if(is_writeable($styleFile)) {
+			$f = fopen($styleFile, 'w+');
+			fwrite($f, $newfile);
+			fclose($f);
+			
+			$style=get_option('gb_style');
+			$theme=get_option('gb_theme');
+			$themename=$theme;
+			
+			echo ' <div id="message" class="updated fade"><p><strong>The &#8220;'.$themename.'&#8221; Stylesheet Has Been Updated</strong></p></div>'."\n";
+		} else {
+	
+			$style=get_option('gb_style');
+			$theme=get_option('gb_theme');
+			$themename=$theme;
+			
+			echo ' <div id="message" class="updated fade"><div class="update error" style="padding-top:14px;padding-bottom:14px;margin-left:15px;"><strong>Write Error!</strong> The &#8220;<code>'.$themename.'</code>&#8221; file is not currently editable/writable! File permissions must first be changed.</p></div>
+			<p>To make the file editable, use your server admin or an <abbr><span class="abbr" title="File Transfer Protocol">FTP</span></abbr> program and go to <code>/wp-content/plugins/wp-gbcf/wp-gbcf_themes/</code> and change the file permissions of the <abbr><span class="abbr" title="Cascading Style Sheet">CSS</span></abbr> file to <code class="reg-alert">666</code>. You should then be able to edit the selected file. If you have made a lot of edits and wish not to lose them, change the &#8220;<code>'.$themename.'</code>&#8221; file permissions then simply refresh this page with your browser.</p></div>'."\n";
+		}
+	} else if (!empty($_POST['saveTheme'])){
+		$theme=$_POST['theme'];
+		if($theme=='none'){
+			update_option('gb_style', 'none');
+			update_option('gb_theme', '');
+		} else if ($theme=='custom'){
+			update_option('gb_style', 'theme');
+			update_option('gb_theme', 'custom.css');
+		} else {
+			update_option('gb_style', 'theme');
+			update_option('gb_theme', $_POST['theme']);
+		} 
+	
+		$style=get_option('gb_style');
+		$theme=get_option('gb_theme');
+		$themename=str_replace(".css", "", $theme);
+		if ($style=='none') {
+			$themename = "No";
+		}
+		echo ' <div id="message" class="updated fade"><p><strong>&#8220;'.$themename.'&#8221; Theme Selected</strong></p></div>'."\n";
+	}
+	return($theme);
 }
 
 ################################################################################
@@ -57,8 +57,8 @@ return($theme);
 function gb_contact_form_admin_style(){
 //make sure options exist for the style page
 //config options
-add_option('gb_style', 'theme', 'Method of styling the form', 'yes');						
-add_option('gb_theme', 'default.css', 'Theme', 'yes');			
+add_option('gb_style', 'theme');						
+add_option('gb_theme', 'default.css');			
 
 // $styleFile set to selected theme
     $style=get_option('gb_theme');           
