@@ -28,5 +28,5 @@ The Secure and Accessible Contact Form plugin for WordPress allows you to add a 
 
 == Changelog ==
 
-= 2.1WP B20110125 = 
+= 2.1WP B20110624 = 
 *	Plugin updated and moved to GITHUB
