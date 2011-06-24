@@ -2,7 +2,7 @@
 /* 
 Plugin Name: Secure and Accessible Contact Form
 Plugin URI: http://mikejolley.com/projects/secure-accessible-contact-form/
-Version: v.2.1WP B20110125
+Version: v.2.1WP B20110624
 Author: <a href="http://green-beast.com/">Mike Cherim</a> and <a href="http://blue-anvil.com/">Mike Jolley</a>
 Description: This powerful yet easy-to-install contact form features exceptional accessibility and usability while still providing extensive anti-spam and anti-exploit security features. A marriage of communication and peace-of-mind. 
 */
@@ -14,7 +14,7 @@ Description: This powerful yet easy-to-install contact form features exceptional
 global $wp_db_version, $wpdb, $gb_root, $form_version, $build;
 
 $form_version = "v.2.1WP";
-$build = "B20110125";
+$build = "B20110624";
 
 if ($wp_db_version < 8201) {
 	if ( ! defined( 'WP_CONTENT_URL' ) ) {

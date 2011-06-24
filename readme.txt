@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_xclick&business=mike.jol
 Tags: Contact Form, Accessible, Secure, Anti-spam
 Requires at least: 2.9
 Tested up to: 3.1
-Stable tag: 2.1WP B20110125
+Stable tag: 2.1
 
 This powerful yet easy-to-install contact form features exceptional accessibility and usability while still providing extensive anti-spam and anti-exploit security features. A marriage of communication and peace-of-mind.
 
