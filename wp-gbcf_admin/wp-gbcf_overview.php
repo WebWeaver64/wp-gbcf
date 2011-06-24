@@ -6,7 +6,7 @@ function gb_contact_form_admin_welcome(){
 	
 	global $gb_root;
 	
-	if ($_GET['resetformsettings']==true) gb_del_options();	
+	if (isset($_GET['resetformsettings']) && $_GET['resetformsettings']==true) gb_del_options();	
 	gb_set_options();
 	
 	?>
@@ -64,7 +64,7 @@ function gb_contact_form_admin_welcome(){
 					</tr>
 					<tr class="alternate">
 						<td class="row-title"><?php _e('Current time'); ?></td>
-						<td class="desc"><?php _e('Wordpress reports that the time is'); ?> <strong><?php echo date("l, F jS, Y \\a\\t g:i a", current_time('timestamp')); ?></strong>.</td>
+						<td class="desc"><?php _e('WordPress reports that the time is'); ?> <strong><?php echo date("l, F jS, Y \\a\\t g:i a", current_time('timestamp')); ?></strong>.</td>
 					</tr>
 				</tbody>
 			</table>
@@ -87,9 +87,6 @@ function gb_contact_form_admin_welcome(){
 			});			
 		/* ]]> */
 		</script>
-		<h3>Copyright and Disclaimer</h3>
-	  	<p>This Secure and Accessible PHP Contact Form &ndash; &copy; Copyright 2006&mdash;<?php echo date('Y'); ?>, <a href="http://green-beast.com/">Mike Cherim</a> and <a href="http://blue-anvil.com/">Mike Jolley</a>. All rights reserved. You are free to use this application but may not redistribute it without written permission. Use of this application will be at your own risk. No guarantees or warranties are made, direct or implied. The creators cannot and will not be liable or held accountable for damages, direct or consequential. By using this application it implies agreement to these conditions.</p>
-	  	<p class="submit jump"><a href="#wphead">Top</a></p>
 	</div>
 	<?php
 }

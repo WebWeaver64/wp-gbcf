@@ -150,7 +150,7 @@ function gb_contact_form_admin_docs() {
  <p>What follows are instructions about the various form-styling methods for making your contact form look its best.</p>
   <h3 id="themes">Form Theme Selector Help</h3>
    <ol>
-    <li>Select one of the available pre-made themes (designed for specific <a href="http://wordpress.org/extend/themes/">popular WordPress themes</a>). Choose which ever most closely meets your needs. The pre-made themes can be edited so you may tweak them to your heart&#8217;s content.</li>
+    <li>Select one of the available pre-made themes (designed for specific <a href="http://WordPress.org/extend/themes/">popular WordPress themes</a>). Choose which ever most closely meets your needs. The pre-made themes can be edited so you may tweak them to your heart&#8217;s content.</li>
     <li>If you want to use your WordPress theme&#8217;s global style sheet to style your form, go for it. Just select <strong>none</strong> from the menu. Your style sheet will already be linked from or imported to the page so no additional steps will be required.</li>
     <li>If you feel creative, create your own custom theme for the form by selecting <strong>custom.css</strong> from the menu. You will get a style sheet that contains all of the IDs, classes, and elements you&#8217;ll need, but no properties will be defined. Have fun and feel free to share your creation with us and others. If it&#8217;s really good and flexible, we made add it to the download and give you full credit. Need a head start? Copy the contents of one of the other themes and begin with that.</li>
     <li>After choosing a theme from the menu, simply click the <strong>Select Theme</strong> to apply your selection. Your selected theme will appear in the editor.</li>
@@ -253,4 +253,3 @@ function gb_contact_form_admin_docs() {
 
 <?php 
 }
-?>

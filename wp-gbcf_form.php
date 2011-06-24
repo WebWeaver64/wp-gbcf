@@ -201,7 +201,7 @@ function gb_show_contact_form() {
 
 	$forms .= "\n".'<div id="gb_form_div"><!-- BEGIN: Secure and Accessible PHP Contact Form '.$form_version.' by Mike Cherim (http://green-beast.com/) and Mike Jolley (http://blue-anvil.com/) -->'."\n";
 
- 	if ($_POST[$send_value]) {
+ 	if (isset($_POST[$send_value])) {
  	
  		$posted = array();
 
@@ -338,7 +338,7 @@ function gb_show_contact_form() {
 
 				// And let's inform the user and show them what they sent
 				$forms.=('   <h'.$options['gb_heading'].' class="formhead" id="results">Results: <span class="success">'.$options['success_heading'].'</span> <small>[ <a href="'.$hr.'">Reset Form</a> ]</small></h'.$options['gb_heading'].'>
-				<p><span class="success">Message Sent:</span> You have successfully sent a message to '.$options['me_or_us'].', '.$posted['gbname'].'. If appropriate to your message, '.$$options['i_or_we'].' will get back to you shortly. You submitted the following information:</p> 
+				<p><span class="success">Message Sent:</span> You have successfully sent a message to '.$options['me_or_us'].', '.$posted['gbname'].'. If appropriate to your message, '.$options['i_or_we'].' will get back to you shortly. You submitted the following information:</p> 
 				<ul>
 				<li><span class="items">Name:</span> '.$posted['gbname'].'</li>
 				<li><span class="items">Email:</span> <a href="mailto:'.$posted['email'].'">'.$posted['email'].'</a> '.$cc_notify1.'</li>
@@ -461,4 +461,3 @@ function gb_show_contact_form() {
 	
 	return $forms; 
 }
-?>
